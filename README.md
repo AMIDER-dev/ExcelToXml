@@ -65,15 +65,69 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 </table>
 
 #### データテーブルB
-| Element Name End | B               |            |             |             |... |              |
-|------------------|----------------|-------------|-------------|-------------|----|--------------|
-|      Output File |                |             | ファイル名1 | ファイル名2 | ...| ファイル名N |
-| **Element Name** |                |             |             |             |    |              |
-| 要素名B-1         |                |             | 値1          | 値1          |    | 値1           |
-| 要素名B-2         | 要素名B-2-1     |             | 値2-1        | 値2-1        |    | 値2-1         |
-|                  | 要素名B-2-2     |             | 値2-2        | 値2-2        |    | 値2-2         |
-| 要素名B-3         | 要素名B-3       |             | 値3          | 値3          |    | 値3           |
-| ...                |                |             |              |              |    |              |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Element Name End</th>
+      <th>B</th>
+      <th>Output File</th>
+      <th>ファイル名1</th>
+      <th>ファイル名2</th>
+      <th>…</th>
+      <th>ファイル名N</th>
+    </tr>
+    <tr>
+      <th colspan="7" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>要素名B-1</td>
+      <td></td>
+      <td></td>
+      <td>値1</td>
+      <td>値1</td>
+      <td></td>
+      <td>値1</td>
+    </tr>
+    <tr>
+      <td>要素名B-2</td>
+      <td>要素名B-2-1</td>
+      <td></td>
+      <td>値2-1</td>
+      <td>値2-1</td>
+      <td></td>
+      <td>値2-1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>要素名B-2-2</td>
+      <td></td>
+      <td>値2-2</td>
+      <td>値2-2</td>
+      <td></td>
+      <td>値2-2</td>
+    </tr>
+    <tr>
+      <td>要素名B-3</td>
+      <td>要素名B-3</td>
+      <td></td>
+      <td>値3</td>
+      <td>値3</td>
+      <td></td>
+      <td>値3</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 要素名定義テーブル（ElementDefine.xlsx）
 データテーブルの要素名とサンプルXMLの各XPathの対応付けを定義する。
