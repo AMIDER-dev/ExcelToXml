@@ -29,7 +29,6 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
     <tr>
       <th>Element Name End</th>
       <th>B</th>
-      <th></th>
     </tr>
     <tr>
       <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
