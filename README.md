@@ -32,7 +32,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <th></th>
     </tr>
     <tr>
-      <th colspan="3" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
+      <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
     </tr>
   </thead>
   <tbody>
