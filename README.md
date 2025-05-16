@@ -24,14 +24,45 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 出力ファイル名はテーブルBの１行目で指定する。出力されるXMLファイルの数はテーブルBのファイル名の数Nで決まる。
 下記の例でイタリック体がユーザーが入力するべき項目。
 #### データテーブルA
-| Element Name End | *B*               |                     |
-|------------------|----------------|---------------------|
-| **Element Name** |                |                     |
-| *要素名A-1*         |                | *値1*                 |
-| *要素名A-2*         | *要素名A-2-1*     | *値2-1*               |
-|                  | *要素名A-2-2*     | *値2-2*               |
-| *要素名A-3*         | *要素名A-3*       | *値3*                 |
-| ...                |                |                     |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Element Name End</th>
+      <th>B</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th colspan="3" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>要素名A-1</td>
+      <td></td>
+      <td>値1</td>
+    </tr>
+    <tr>
+      <td>要素名A-2</td>
+      <td>要素名A-2-1</td>
+      <td>値2-1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>要素名A-2-2</td>
+      <td>値2-2</td>
+    </tr>
+    <tr>
+      <td>要素名A-3</td>
+      <td>要素名A-3</td>
+      <td>値3</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 #### データテーブルB
 | Element Name End | B               |            |             |             |... |              |
