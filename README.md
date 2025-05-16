@@ -25,7 +25,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 下記の例でイタリック体がユーザーが入力するべき項目。
 #### データテーブルA
 <table border="1" cellspacing="0" cellpadding="5">
-  <thead>
+  <tbody>
     <tr>
       <td>Element Name End</td>
       <td>B</td>
@@ -35,8 +35,6 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
       <th></th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td colspan="2">要素名A-1</td>
       <td>値1</td>
