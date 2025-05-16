@@ -82,8 +82,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <th>ファイル名N</th>
     </tr>
     <tr>
-      <th colspan="7" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
-      <th></th>
+      <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
       <th></th>
       <th></th>
       <th></th>
