@@ -22,18 +22,18 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 要素名と値の階層構造はテーブルA・BのElement Name欄でセルの結合を使用して表現される。
 データテーブルA・BでElement Name欄が使う列数（要素名の入れ子階層）は可変なので、終了列をB1セルで指定する。
 出力ファイル名はテーブルBの１行目で指定する。出力されるXMLファイルの数はテーブルBのファイル名の数Nで決まる。
-下記の例でイタリック体がユーザーが入力するべき項目。
+
 #### データテーブルA
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr>
-      <td>Element Name End</td>
+      <td style="background-color:#d0d9e6;"><strong>Element Name End<</strong>/td>
       <td>B</td>
       <td></td>
     </tr>
     <tr>
-      <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
-      <th></th>
+      <td colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></td>
+      <td></td>
     </tr>
     <tr>
       <td colspan="2">要素名A-1</td>
