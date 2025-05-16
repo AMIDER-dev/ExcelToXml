@@ -63,14 +63,14 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 
 #### データテーブルB
 <table border="1" cellspacing="0" cellpadding="5">
-  <thead>
+  <tbody>
     <tr>
-      <th>Element Name End</th>
-      <th>B</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <td style="background-color:#d0d9e6;"><strong>Element Name End</strong></td>
+      <td>B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="2">Output File</th>
@@ -86,8 +86,6 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <th></th>
       <th></th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td colspan="2">要素名B-1</td>
       <td>値1</td>
