@@ -27,7 +27,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr>
-      <td style="background-color:#d0d9e6;"><strong>Element Name End<</strong>/td>
+      <td style="background-color:#d0d9e6;"><strong>Element Name End</strong></td>
       <td>B</td>
       <td></td>
     </tr>
