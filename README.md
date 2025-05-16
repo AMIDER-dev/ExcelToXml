@@ -3,9 +3,9 @@
 
 ```mermaid
 flowchart LR
-A[サンプルXML] -->|XML構造を読み取る| C[データテーブルの各要素名とXPathを対応付ける]
-B[データテーブルA・B] -->|XML各要素の値を読み取る| C
-D[要素名定義テーブル] -.-> C
+A[サンプルXML] -->|XML構造| C[データテーブルの各要素名とXPathを対応付ける]
+B[データテーブルA・B] -->|XML各要素の値| C
+D[要素名定義テーブル] -->|XPath| C
 C --> E[XML作成]
 E --> F[XML検証]
 G[XSD検証] --> H[XSDファイル]
