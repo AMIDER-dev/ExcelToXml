@@ -29,19 +29,20 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
     <tr>
       <th>Element Name End</th>
       <th>B</th>
+      <th></th>
     </tr>
     <tr>
       <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>要素名A-1</td>
-      <td></td>
+      <td colspan="2">要素名A-1</td>
       <td>値1</td>
     </tr>
     <tr>
-      <td>要素名A-2</td>
+      <td rowspan="2">要素名A-2</td>
       <td>要素名A-2-1</td>
       <td>値2-1</td>
     </tr>
@@ -56,7 +57,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <td>値3</td>
     </tr>
     <tr>
-      <td>…</td>
+      <td>...</td>
       <td></td>
       <td></td>
     </tr>
