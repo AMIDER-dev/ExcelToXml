@@ -1,6 +1,6 @@
 # ExcelToXML
 テーブル形式のメタデータを入力スキーマに従ってXMLファイルへ変換する。Convert table-format data to XML files following the input schema.<br>
-プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。それにより複数のXMLデータを一括生成する。それらのXSDデータに対するvalidationを行う。
+プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。それにより複数のXMLデータを一括生成できる。作成したXMLファイルのスキーマ（XSD）に対するvalidationを行う。
 各テーブルはエクセルファイルで用意する。各セルの書式は全て文字列で与える。
 
 ```mermaid
