@@ -217,6 +217,6 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 - ISO
 
 ```
-dotnet run --project ..\ExcelToXml\ExcelToXml.Console -- -a .\DataTable_A.xlsx -b .\DataTable_B.xlsx -e .\ElementDefine.xlsx -s .\sample_ISO.xml -x .\ISO\gmd\gmd.xsd --xsdfolder .\ISO\ -o ./
+dotnet run --project .\ExcelToXml\ExcelToXml.Console -- -a .\DataTable_A.xlsx -b .\DataTable_B.xlsx -e .\ElementDefine.xlsx -s .\sample_ISO.xml -x .\ISO\gmd\gmd.xsd --xsdfolder .\ISO\ -o ./
 ```
 スキーマ検証済みのXMLファイル test_ISO1.xml, test_ISO2.xml ができる
