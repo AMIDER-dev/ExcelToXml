@@ -1,38 +1,39 @@
-# ExcelToXML
-テーブル形式のメタデータを入力スキーマに従ってXMLファイルへ変換する。Convert table-format data to XML files following the input schema.<br>
-プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。それにより複数のXMLデータを一括生成できる。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。
-各テーブルはエクセルファイルで用意する。各セルの書式は全て文字列で与える。
+---
 
-```mermaid
-flowchart LR
-A[サンプルXML] -->|XML構造| D[XML作成]
-B[データテーブルA・B] -->|XML各要素の値| D
-C[要素名定義テーブル] -->|データテーブルの各要素名とXPathの対応|D
-D --> E[XMLスキーマ検証]
-G[XSDファイル] --> H[XSD構文検証]
-H --> E
-```
 
-## 入力データ
-### サンプルXMLファイル
-XML構造をプログラムに与えるためのタグ構造のみのXML。各要素の値は入っていないものとする。XSDではなくサンプルXMLで構造を与えることで、大規模なXSDを全て読み込むことを避ける。既存のXMLファイルから値を削除するか、XSDファイルから一般的なXMLエディタで作成できる。
-### データテーブルA・B（DataTable_A.xlsx, DataTable_B.xlsx）
-テーブル形式のメタデータ。要素名と各要素の値。
-各出力XMLファイルで共通の項目はテーブルAで与えられ、個別に異なる値はテーブルBで与えられる。
-要素名と値の階層構造はテーブルA・BのElement Name欄でセルの結合を使用して表現される。
-データテーブルA・BでElement Name欄が使う列数（要素名の入れ子階層）は可変なので、終了列をB1セルで指定する。
-出力ファイル名はテーブルBの１行目で指定する。出力されるXMLファイルの数はテーブルBのファイル名の数Nで決まる。
+---
 
-#### データテーブルA
+<h1 id="exceltoxml">ExcelToXML</h1>
+<p>テーブル形式のメタデータを入力スキーマに従ってXMLファイルへ変換する。Convert table-format data to XML files following the input schema.<br><br>
+プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。それにより複数のXMLデータを一括生成できる。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。<br>
+各テーブルはエクセルファイルで用意する。各セルの書式は全て文字列で与える。</p>
+<pre class=" language-mermaid"><code class="prism  language-mermaid">flowchart LR
+A[サンプルXML] --&gt;|XML構造| D[XML作成]
+B[データテーブルA・B] --&gt;|XML各要素の値| D
+C[要素名定義テーブル] --&gt;|データテーブルの各要素名とXPathの対応|D
+D --&gt; E[XMLスキーマ検証]
+G[XSDファイル] --&gt; H[XSD構文検証]
+H --&gt; E
+</code></pre>
+<h2 id="入力データ">入力データ</h2>
+<h3 id="サンプルxmlファイル">サンプルXMLファイル</h3>
+<p>XML構造をプログラムに与えるためのタグ構造のみのXML。各要素の値は入っていないものとする。XSDではなくサンプルXMLで構造を与えることで、大規模なXSDを全て読み込むことを避ける。既存のXMLファイルから値を削除するか、XSDファイルから一般的なXMLエディタで作成できる。</p>
+<h3 id="データテーブルa・b（datatable_a.xlsx-datatable_b.xlsx）">データテーブルA・B（DataTable_A.xlsx, DataTable_B.xlsx）</h3>
+<p>テーブル形式のメタデータ。要素名と各要素の値。<br>
+各出力XMLファイルで共通の項目はテーブルAで与えられ、個別に異なる値はテーブルBで与えられる。<br>
+要素名と値の階層構造はテーブルA・BのElement Name欄でセルの結合を使用して表現される。<br>
+データテーブルA・BでElement Name欄が使う列数（要素名の入れ子階層）は可変なので、終了列をB1セルで指定する。<br>
+出力ファイル名はテーブルBの１行目で指定する。出力されるXMLファイルの数はテーブルBのファイル名の数Nで決まる。</p>
+<h4 id="データテーブルa">データテーブルA</h4>
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr>
-      <td style="background-color:#d0d9e6;"><strong>Element Name End</strong></td>
+      <td><strong>Element Name End</strong></td>
       <td>B</td>
       <td></td>
     </tr>
     <tr>
-      <td colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></td>
+      <td colspan="2"><strong>Element Name</strong></td>
       <td></td>
     </tr>
     <tr>
@@ -60,12 +61,11 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
     </tr>
   </tbody>
 </table>
-
-#### データテーブルB
+<h4 id="データテーブルb">データテーブルB</h4>
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr>
-      <td style="background-color:#d0d9e6;"><strong>Element Name End</strong></td>
+      <td><strong>Element Name End</strong></td>
       <td>B</td>
       <td></td>
       <td></td>
@@ -80,7 +80,7 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
       <th>ファイル名N</th>
     </tr>
     <tr>
-      <th colspan="2" style="background-color:#d0d9e6;"><strong>Element Name</strong></th>
+      <th colspan="2"><strong>Element Name</strong></th>
       <th></th>
       <th></th>
       <th></th>
@@ -126,8 +126,8 @@ XML構造をプログラムに与えるためのタグ構造のみのXML。各�
     </tr>
   </tbody>
 </table>
+<h3 id="要素名定義テーブル（elementdefine.xlsx）">要素名定義テーブル（ElementDefine.xlsx）</h3>
+<p>データテーブルの要素名とサンプルXMLの各XPathの対応付けを定義する。</p>
+<h3 id="xsdファイル">XSDファイル</h3>
+<p>作成したXMLが従うべきスキーマ。</p>
 
-### 要素名定義テーブル（ElementDefine.xlsx）
-データテーブルの要素名とサンプルXMLの各XPathの対応付けを定義する。
-### XSDファイル
-作成したXMLが従うべきスキーマ。
