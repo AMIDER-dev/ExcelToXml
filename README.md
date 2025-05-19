@@ -8,8 +8,8 @@ flowchart LR
 A[サンプルXML] -->|XML構造| D[XML作成]
 B[データテーブルA・B] -->|XML各要素の値| D
 C[要素名定義テーブル] -->|データテーブルの各要素名とXPathの対応|D
-D --> E[XML検証]
-G[XSDファイル] --> H[XSD検証]
+D --> E[XMLスキーマ検証]
+G[XSDファイル] --> H[XSD構文検証]
 H --> E
 ```
 
