@@ -15,8 +15,8 @@ H --> E
 
 ## ディレクトリ
 - ExcelToXml: ソースコード
-- examples: 入出力データ例
-  - ISO: ISO Geographic MetaData (GMD) スキーマ準拠のメタデータを作成する例。（参考URL https://committee.iso.org/sites/tc211/home/re.html; https://schemas.isotc211.org/19139/-/gmd/1.0/gmd/）
+- examples: 入出力データ例。各スキーマ（XSDファイル）のschemaLocation属性はローカルファイルを参照するように改変してある。
+  - ISO: ISO Geographic MetaData (GMD) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://committee.iso.org/sites/tc211/home/re.html; https://schemas.isotc211.org/19139/-/gmd/1.0/gmd/）
 
 
 ## 環境要件
