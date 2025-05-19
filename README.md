@@ -13,6 +13,12 @@ G[XSDファイル] --> H[XSD構文検証]
 H --> E
 ```
 
+## ディレクトリ
+- ExcelToXml: ソースコード
+- examples: 入出力データ例
+  - ISO: ISO Geographic MetaData (GMD) スキーマ準拠のメタデータを作成する例。（参考URL https://committee.iso.org/sites/tc211/home/re.html; https://schemas.isotc211.org/19139/-/gmd/1.0/gmd/）
+
+
 ## 環境要件
 .NET 8.0.3以上
 
