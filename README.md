@@ -194,7 +194,7 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 
 #### コマンド引数
 |      | 省略形 |     |
-| ---- | ---- |
+| ---- | ---- | ---- |
 | --datatable_a    | -a | データテーブルAのパス |
 | --datatable_b    | -b | データテーブルBのパス |
 | --sample_xml     | -s | サンプルXMLのパス |
@@ -206,4 +206,3 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 | --info           |    | 実行中処理の詳細を出力する |
 | --nowarning      |    | 警告メッセージを表示しない |
 
-| 
