@@ -7,17 +7,14 @@
 <p>テーブル形式のメタデータを入力スキーマに従ってXMLファイルへ変換する。Convert table-format data to XML files following the input schema.<br><br>
 プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。それにより複数のXMLデータを一括生成できる。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。<br>
 各テーブルはエクセルファイルで用意する。各セルの書式は全て文字列で与える。</p>
-
-```mermaid
-flowchart LR
-A[サンプルXML] -->|XML構造| D[XML作成]
-B[データテーブルA・B] -->|XML各要素の値| D
-C[要素名定義テーブル] -->|データテーブルの各要素名とXPathの対応|D
-D --> E[XMLスキーマ検証]
-G[XSDファイル] --> H[XSD構文検証]
-H --> E
-```
-
+<pre class=" language-mermaid"><code class="prism  language-mermaid">flowchart LR
+A[サンプルXML] --&gt;|XML構造| D[XML作成]
+B[データテーブルA・B] --&gt;|XML各要素の値| D
+C[要素名定義テーブル] --&gt;|データテーブルの各要素名とXPathの対応|D
+D --&gt; E[XMLスキーマ検証]
+G[XSDファイル] --&gt; H[XSD構文検証]
+H --&gt; E
+</code></pre>
 <h2 id="入力データ">入力データ</h2>
 <h3 id="サンプルxmlファイル">サンプルXMLファイル</h3>
 <p>XML構造をプログラムに与えるためのタグ構造のみのXML。XSDファイルで指定されるスキーマに従っていること。各要素の値は入っていないものとする。ユーザーが使用するXML構造のみの記述で良い。XSDではなくサンプルXMLで構造を与えることで、大規模なXSDを全て読み込むことを避ける。既存のXMLファイルから値を削除するか、XSDファイルから一般的なXMLエディタで作成できる。</p>
