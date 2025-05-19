@@ -213,3 +213,10 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 | --info           |    | 実行中処理の詳細を出力する |
 | --nowarning      |    | 警告メッセージを表示しない |
 
+#### examplesの実行方法
+- ISO
+
+```
+dotnet run --project ..\ExcelToXml\ExcelToXml.Console -- -a .\DataTable_A.xlsx -b .\DataTable_B.xlsx -e .\ElementDefine.xlsx -s .\sample_ISO.xml -x .\ISO\gmd\gmd.xsd --xsdfolder .\ISO\ -o ./
+```
+スキーマ検証済みのXMLファイル test_ISO1.xml, test_ISO2.xml ができる
