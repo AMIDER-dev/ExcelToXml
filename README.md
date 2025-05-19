@@ -193,7 +193,7 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 ```
 
 #### コマンド引数
-|               | 省略形 |
+|      | 省略形 |     |
 | ---- | ---- |
 | --datatable_a    | -a | データテーブルAのパス |
 | --datatable_b    | -b | データテーブルBのパス |
