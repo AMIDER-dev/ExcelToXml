@@ -63,7 +63,7 @@ H --&gt; E
 </table>
 <h4 id="データテーブルb">データテーブルB</h4>
 <table border="1" cellspacing="0" cellpadding="5">
-  <thead>
+  <tbody>
     <tr>
       <td><strong>Element Name End</strong></td>
       <td>B</td>
@@ -72,8 +72,6 @@ H --&gt; E
       <td></td>
       <td></td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td colspan="2"><strong>Output File</strong></td>
       <td>ファイル名1</td>
