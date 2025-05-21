@@ -191,7 +191,7 @@ dotnet build
 #### モード1
 データテーブルを要素名定義テーブルとサンプルXMLに従ってXMLファイルへ変換する。-xオプションが指定された場合は各XMLファイルに対してXSD妥当性検証を行う。
 ```
-dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Console -- -a <データテーブルAのパス> -b <データテーブルBのパス> -s <サンプルXMLのパス> -e <要素名定義テーブルのパス> -x <XSDファイルのパス> -o <出力先パス>
+dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Console -- -a <データテーブルAのパス> -b <データテーブルBのパス> -s <サンプルXMLのパス> -e <要素名定義テーブルのパス> -x <XSDファイルのパス（省略可）> --xsdfolder <XSDファイル群のルートフォルダ（省略可）> -o <出力先パス>
 ```
 #### モード2
 既存のXMLファイルに対してXSD妥当性検証を行う。
@@ -207,7 +207,7 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 | --sample_xml     | -s | サンプルXMLのパス |
 | --element_define | -e | 要素名定義テーブルのパス |
 | --xsd            | -x | XSDのルートファイルのパス |
-| --xsdfolder      |    | 全てのXSDファイルが格納されているフォルダ。--xsdオプションで指定されるXSDルートファイルと同じフォルダに格納されている場合、省略可。
+| --xsdfolder      |    | 全てのXSDファイルが格納されているルートフォルダ。--xsdオプションで指定されるXSDルートファイルと同じフォルダに全て格納されている場合、省略可。
 | --output         | -o | 出力先フォルダ |
 | --xmlfiles       |    | 入力XMLファイルのパス。モード2の場合のみ使用。 |
 | --info           |    | 実行中処理の詳細を出力する |
@@ -217,6 +217,6 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 - ISO
 
 ```
-dotnet run --project ./ExcelToXml/ExcelToXml.Console -- -a ./ISO/DataTable_A.xlsx -b ./ISO/DataTable_B.xlsx -e ./ISO/ElementDefine.xlsx -s ./ISO/sample_ISO.xml -x ./ISO/gmd/gmd.xsd --xsdfolder ./ISO/ISO/ -o ./
+dotnet run --project ./ExcelToXml/ExcelToXml.Console -- -a ./ISO/DataTable_A.xlsx -b ./ISO/DataTable_B.xlsx -e ./ISO/ElementDefine.xlsx -s ./ISO/sample_ISO.xml -x ./ISO/schema/gmd/gmd.xsd --xsdfolder ./ISO/schema/ -o ./
 ```
 スキーマ検証済みのXMLファイル test_ISO1.xml, test_ISO2.xml ができる
