@@ -1,5 +1,5 @@
 # ExcelToXml
-テーブル形式のメタデータを入力スキーマに従ってXMLファイルへ変換する。Convert table-format data to XML files following the input schema.<br>
+エクセルで入力されたツリー構造のデータをスキーマに従ってXMLファイルへ変換する。Convert tree-structure data in Excel to XML files following the schema.<br>
 プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。各テーブルはエクセルファイルとし、各セルの書式は全て文字列で与える。<br>
 あるXSDスキーマに対してサンプルXMLと要素名定義テーブルを一度作っておけば、エクセル表形式のメタデータ（データテーブルA・B）からXMLへの変換をコマンド１つで行えるようになる。また、複数のXMLファイルを一括生成できる。
 
