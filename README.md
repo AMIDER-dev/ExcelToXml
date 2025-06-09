@@ -28,7 +28,8 @@ H --> E
     - output_1.xml, output_2.xml: ExcelToXmlによりデータテーブルから作成されたXMLファイル
 
 ## 環境要件
-.NET (C#) 8.0.3以上
+- .NET (C#) 8.0.3以上
+- ClosedXML
 
 ## 入力データ
 ### サンプルXMLファイル
@@ -226,3 +227,8 @@ dotnet run --project <ソリューションフォルダのパス>/ExcelToXml.Con
 dotnet run --project ./ExcelToXml/ExcelToXml.Console -- -a ./ISO/DataTable_A.xlsx -b ./ISO/DataTable_B.xlsx -e ./ISO/ElementDefine.xlsx -s ./ISO/sample.xml -x ./ISO/schema/gmd/gmd.xsd --xsdfolder ./ISO/schema/ -o ./
 ```
 スキーマ検証済みのXMLファイル output_1.xml, output_2.xml ができる。
+
+## License
+
+This software is released under the [MIT License](LICENSE).
+It uses [ClosedXML](https://github.com/ClosedXML/ClosedXML), which is also licensed under the MIT License.
