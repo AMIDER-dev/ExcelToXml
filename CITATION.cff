@@ -16,8 +16,8 @@ authors:
   given-names: "Atsuki"
   orcid: "https://orcid.org/0000-0002-6018-7431"
 
-title: "XmlToExcel"
+title: "ExcelToXml"
 abstract: >
-  XmlToExcel is a software developed as part of the AMIDER project (https://amider.rois.ac.jp/). Please follow the license and cite the DOI when you use this software.
-doi: "10.5281/zenodo.15590207"
-url: "https://github.com/AMIDER-dev/XmlToExcel"
+  ExcelToXml is a software developed as part of the AMIDER project (https://amider.rois.ac.jp/). Please follow the license and cite the DOI when you use this software.
+doi: "10.5281/zenodo.15621697"
+url: "https://github.com/AMIDER-dev/ExcelToXml"
