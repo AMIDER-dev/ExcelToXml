@@ -1,3 +1,8 @@
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15621698.svg)](https://doi.org/10.5281/zenodo.15621698)
+
+Please follow the license and cite the DOI when you use this software.
+
 # ExcelToXml
 エクセルで入力されたツリー構造のデータをスキーマに従ってXMLファイルへ変換する。Convert tree-structure data in Excel to XML files following the schema.<br>
 プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。各テーブルはエクセルファイルとし、各セルの書式は全て文字列で与える。<br>
