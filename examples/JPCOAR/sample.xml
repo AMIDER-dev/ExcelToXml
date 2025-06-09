@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpcoar:jpcoar
+    xmlns:jpcoar="https://github.com/JPCOAR/schema/blob/master/2.0/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:dcterms="http://purl.org/dc/terms/" 
+    xmlns:datacite="https://schema.datacite.org/meta/kernel-4/" 
+    xmlns:oaire="http://namespace.openaire.eu/schema/oaire/" 
+    xmlns:dcndl="http://ndl.go.jp/dcndl/terms/" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="https://github.com/JPCOAR/schema/blob/master/2.0/ jpcoar_scm.xsd">
+    <!-- 7. 研究データ（オープンアクセス、JaLC DOI登録あり） / Research Data (Open Access, JaLC DOI registered) -->
+    <dc:title xml:lang="en"/>
+    <jpcoar:creator>
+        <jpcoar:nameIdentifier nameIdentifierScheme="ORCID"/>
+        <jpcoar:creatorName xml:lang="ja"/>
+        <jpcoar:creatorName xml:lang="en"/>
+        <jpcoar:creatorName xml:lang="ja-Kana"/>
+        <jpcoar:affiliation>
+            <jpcoar:nameIdentifier nameIdentifierScheme="ISNI"/>
+            <jpcoar:affiliationName xml:lang="ja"/>
+            <jpcoar:affiliationName xml:lang="en"/>
+        </jpcoar:affiliation>
+    </jpcoar:creator>
+    <!-- プロジェクトリーダー / Project Leader-->
+    <jpcoar:contributor contributorType="ProjectLeader">
+        <jpcoar:nameIdentifier nameIdentifierScheme="ORCID"/>
+        <jpcoar:contributorName xml:lang="ja"/>
+        <jpcoar:contributorName xml:lang="en"/>
+        <jpcoar:contributorName xml:lang="ja-Kana"/>
+        <jpcoar:affiliation>
+            <jpcoar:nameIdentifier nameIdentifierScheme="ISNI"/>
+            <jpcoar:affiliationName xml:lang="ja"/>
+            <jpcoar:affiliationName xml:lang="en"/>
+        </jpcoar:affiliation>
+    </jpcoar:contributor>
+    <!-- オープンアクセス / Open Access-->
+    <dcterms:accessRights rdf:resource="http://purl.org/coar/access_right/c_abf2"/>
+    <dc:rights xml:lang="en" rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en"/>
+    <jpcoar:subject xml:lang="ja" subjectScheme="e-Rad_field"/>
+    <jpcoar:subject xml:lang="en" subjectScheme="e-Rad_field"/>
+    <jpcoar:subject xml:lang="en" subjectScheme="Other"/>
+    <datacite:description descriptionType="Abstract"/>
+    <dc:publisher xml:lang="ja"/>
+    <dc:publisher xml:lang="en"/>
+    <!-- 作成日 / Created Date -->
+    <datacite:date dateType="Created"/>
+    <datacite:date dateType="Issued"/>
+    <!-- 更新日 / Updated Date -->
+    <datacite:date dateType="Updated"/>
+    <dc:language/>
+    <!-- データセット / Dataset -->
+    <dc:type rdf:resource="http://purl.org/coar/resource_type/c_ddb1"/>
+    <!-- バージョン / Version -->
+    <datacite:version/>
+    <!-- 17 識別子にURI形式でDOIを記入 / Input the DOI name of the content in HTTP URI syntax -->
+    <jpcoar:identifier identifierType="DOI"/>
+    <!-- JaLC DOIを登録する場合は、18 ID登録にDOIをprefix/suffixの形式で記入 / Input a DOI name in prefix/suffix syntax for DOI registration -->
+    <jpcoar:identifierRegistration identifierType="JaLC"/>
+    <!-- データを引用した論文へのリンク / Link to an article citing the dataset -->
+    <jpcoar:relation relationType="isReferencedBy">
+        <jpcoar:relatedIdentifier identifierType="DOI"/>
+    </jpcoar:relation>
+    <dcterms:temporal xml:lang="en"/>
+    <datacite:geoLocation>
+        <datacite:geoLocationBox>
+            <datacite:westBoundLongitude/>
+            <datacite:eastBoundLongitude/>
+            <datacite:southBoundLatitude/>
+            <datacite:northBoundLatitude/>
+        </datacite:geoLocationBox>
+    </datacite:geoLocation>
+    <jpcoar:fundingReference>
+        <jpcoar:funderIdentifier funderIdentifierType="e-Rad_funder"/>
+        <jpcoar:funderName xml:lang="ja"/>
+        <jpcoar:fundingStream xml:lang="ja"/>
+        <jpcoar:awardNumber awardNumberType="JGN"/>
+        <jpcoar:awardTitle xml:lang="ja"/>
+    </jpcoar:fundingReference> 
+    <jpcoar:file>
+        <jpcoar:URI objectType="dataset"/>
+        <jpcoar:extent/>
+        <datacite:date dateType="Created"/>
+        <datacite:date dateType="Issued"/>
+        <datacite:date dateType="Updated"/>
+        <!-- バージョン / Version -->
+        <datacite:version/>
+    </jpcoar:file>
+</jpcoar:jpcoar>

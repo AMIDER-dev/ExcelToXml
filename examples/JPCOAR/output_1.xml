@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jpcoar:jpcoar xmlns:jpcoar="https://github.com/JPCOAR/schema/blob/master/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:datacite="https://schema.datacite.org/meta/kernel-4/" xmlns:oaire="http://namespace.openaire.eu/schema/oaire/" xmlns:dcndl="http://ndl.go.jp/dcndl/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://github.com/JPCOAR/schema/blob/master/2.0/ jpcoar_scm.xsd">
+  <!-- 7. 研究データ（オープンアクセス、JaLC DOI登録あり） / Research Data (Open Access, JaLC DOI registered) -->
+  <dc:title xml:lang="en">テスト１</dc:title>
+  <jpcoar:creator>
+    <jpcoar:creatorName xml:lang="ja">山田　太郎</jpcoar:creatorName>
+    <jpcoar:creatorName xml:lang="en">Taro Yamada</jpcoar:creatorName>
+    <jpcoar:creatorName xml:lang="ja-Kana">ヤマダ　タロウ</jpcoar:creatorName>
+    <jpcoar:affiliation>
+      <jpcoar:affiliationName xml:lang="ja">テスト機関</jpcoar:affiliationName>
+      <jpcoar:affiliationName xml:lang="en">Test Organization</jpcoar:affiliationName>
+    </jpcoar:affiliation>
+  </jpcoar:creator>
+  <!-- プロジェクトリーダー / Project Leader-->
+  <jpcoar:contributor contributorType="ProjectLeader">
+    <jpcoar:contributorName xml:lang="ja">山田　花子</jpcoar:contributorName>
+    <jpcoar:contributorName xml:lang="en">Hanako Yamada</jpcoar:contributorName>
+    <jpcoar:contributorName xml:lang="ja-Kana">ヤマダ　ハナコ</jpcoar:contributorName>
+    <jpcoar:affiliation>
+      <jpcoar:affiliationName xml:lang="ja">テスト大学</jpcoar:affiliationName>
+      <jpcoar:affiliationName xml:lang="en">Test Univerisity</jpcoar:affiliationName>
+    </jpcoar:affiliation>
+  </jpcoar:contributor>
+  <!-- オープンアクセス / Open Access-->
+  <dcterms:accessRights rdf:resource="http://purl.org/coar/access_right/c_abf2">open access</dcterms:accessRights>
+  <dc:rights xml:lang="en" rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons Attribution 4.0 International</dc:rights>
+  <jpcoar:subject xml:lang="ja" subjectScheme="e-Rad_field">メタデータ</jpcoar:subject>
+  <jpcoar:subject xml:lang="en" subjectScheme="e-Rad_field">Metadata</jpcoar:subject>
+  <jpcoar:subject xml:lang="en" subjectScheme="Other">English Keyword</jpcoar:subject>
+  <datacite:description descriptionType="Abstract">JPCOAR形式メタデータの作成テストです。</datacite:description>
+  <dc:publisher xml:lang="ja">テスト機関</dc:publisher>
+  <dc:publisher xml:lang="en">Test Organization</dc:publisher>
+  <!-- 作成日 / Created Date -->
+  <datacite:date dateType="Created">2025-05-14</datacite:date>
+  <datacite:date dateType="Issued">2025-06-14</datacite:date>
+  <!-- 更新日 / Updated Date -->
+  <datacite:date dateType="Updated">2025-07-14</datacite:date>
+  <dc:language>eng</dc:language>
+  <!-- データセット / Dataset -->
+  <dc:type rdf:resource="http://purl.org/coar/resource_type/c_ddb1">dataset</dc:type>
+  <!-- バージョン / Version -->
+  <datacite:version>1.0</datacite:version>
+  <!-- 17 識別子にURI形式でDOIを記入 / Input the DOI name of the content in HTTP URI syntax -->
+  <jpcoar:identifier identifierType="DOI">https://doi.org/xxx.xxx</jpcoar:identifier>
+  <!-- JaLC DOIを登録する場合は、18 ID登録にDOIをprefix/suffixの形式で記入 / Input a DOI name in prefix/suffix syntax for DOI registration -->
+  <!-- データを引用した論文へのリンク / Link to an article citing the dataset -->
+  <jpcoar:relation relationType="isReferencedBy">
+    <jpcoar:relatedIdentifier identifierType="DOI">https://doi.org/yyy.yyy</jpcoar:relatedIdentifier>
+  </jpcoar:relation>
+  <dcterms:temporal xml:lang="en">2000-01-01 - 2010-01-01</dcterms:temporal>
+  <datacite:geoLocation>
+    <datacite:geoLocationBox>
+      <datacite:westBoundLongitude>110.0</datacite:westBoundLongitude>
+      <datacite:eastBoundLongitude>150.0</datacite:eastBoundLongitude>
+      <datacite:southBoundLatitude>20.0</datacite:southBoundLatitude>
+      <datacite:northBoundLatitude>50.0</datacite:northBoundLatitude>
+    </datacite:geoLocationBox>
+  </datacite:geoLocation>
+  <jpcoar:file>
+    <jpcoar:URI objectType="dataset">https://file</jpcoar:URI>
+    <jpcoar:extent>5GB</jpcoar:extent>
+    <!-- バージョン / Version -->
+  </jpcoar:file>
+</jpcoar:jpcoar>

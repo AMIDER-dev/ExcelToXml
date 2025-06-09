@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XMLSpy バージョン 2024 rel. 2 (x64) により生成されたサンプル XML ファイル (http://www.altova.com)-->
+<Spase xmlns:spase="http://www.spase-group.org/data/schema" lang="">
+  <Version>2.2.6</Version>
+  <NumericalData>
+    <ResourceID>spase://fuga</ResourceID>
+    <ResourceHeader>
+      <ResourceName>output 2</ResourceName>
+      <ReleaseDate>2011-04-01T12:00:00</ReleaseDate>
+      <Description>fuga fuga</Description>
+      <Acknowledgement>How to use</Acknowledgement>
+      <Contact>
+        <PersonID>spase://IUGONET/Person/Yoshimasa.Tanaka</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://IUGONET/Person/Akira.Kadokura</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://IUGONET/Repository/NIPR/IUGONET_DB_NIPR</RepositoryID>
+      <AccessURL>
+        <Name>fuga</Name>
+        <URL>https://fuga.jp</URL>
+        <Description>description</Description>
+      </AccessURL>
+      <AccessURL>
+        <Name>Sample-1 URL2</Name>
+        <URL>https://common.dummy.jp</URL>
+        <Description>Sample-1 URL2 description.</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+    </AccessInformation>
+    <InstrumentID>spase://IUGONET/Instrument/NIPR/AMN/AMB/fluxgate</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>2008-02-25T00:00:00</StartDate>
+        <StopDate>2020-12-25T06:00:00</StopDate>
+      </TimeSpan>
+    </TemporalDescription>
+    <ObservedRegion>Earth.NearSurface.Ionosphere.ERegion</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <SpatialCoverage>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEO</CoordinateSystemName>
+      </CoordinateSystem>
+      <NorthernmostLatitude>-66.80</NorthernmostLatitude>
+      <SouthernmostLatitude>-66.80</SouthernmostLatitude>
+      <EasternmostLongitude>50.58</EasternmostLongitude>
+      <WesternmostLongitude>50.58</WesternmostLongitude>
+    </SpatialCoverage>
+    <Keyword>EARTH-SCIENCE/Magnetic field</Keyword>
+  </NumericalData>
+</Spase>
