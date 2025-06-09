@@ -20,9 +20,9 @@ H --> E
 ## ディレクトリ
 - ExcelToXml: ソースコード
 - examples: 入出力データ例。各スキーマ（XSDファイル）のschemaLocation属性はローカルファイルを参照するように編集してある。
-  - ISO: ISO Geographic MetaData (GMD) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://committee.iso.org/sites/tc211/home/re.html; https://schemas.isotc211.org/19139/-/gmd/1.0/gmd/）
-  - SPASE: Space Physics Archive Search and Extract (SPASE) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://spase-group.org/data/schema/）
-  - JPCOAR: オープンアクセスリポジトリ推進協会 (JPCOAR) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://schema.irdb.nii.ac.jp/ja）
+  - ISO: ISO Geographic MetaData (GMD) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://committee.iso.org/sites/tc211/home/re.html; https://schemas.isotc211.org/19139/-/gmd/1.0/gmd/ ）
+  - SPASE: Space Physics Archive Search and Extract (SPASE) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://spase-group.org/data/schema/ ）
+  - JPCOAR: オープンアクセスリポジトリ推進協会 (JPCOAR) スキーマ準拠のメタデータを作成する例。（スキーマ参考URL https://schema.irdb.nii.ac.jp/ja ）
   - 各フォルダ内のファイル
     - sample.xml: サンプルXMLファイル
     - DataTable_A.xlsx: データテーブルA
