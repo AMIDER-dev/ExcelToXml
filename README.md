@@ -3,7 +3,7 @@
 Please follow the license and cite the DOI when you use this software.
 
 # ExcelToXml
-エクセルで入力されたツリー構造のデータをスキーマに従ってXMLファイルへ変換する。Convert tree-structure data in Excel to XML files following the schema.<br>
+エクセルで入力されたツリー構造のデータをスキーマに従ってXMLファイルへ変換する。共通・非共通項目を持つ複数のXMLファイルを一括生成できる。Convert tree-structured datasets described in Excel table into multiple XML files following the schema.<br>
 プログラムはサンプルXMLファイルに従ってXMLデータ構造を定義する。要素名定義テーブルで指定されるXPathに従い、データ構造の中へデータテーブルA・Bの値を入力する。作成したXMLファイルのスキーマ（XSD）に対する妥当性検証を行う。各テーブルはエクセルファイルとし、各セルの書式は全て文字列で与える。<br>
 あるスキーマに対してサンプルXMLと要素名定義テーブルを一度作っておけば、エクセル表形式のメタデータ（データテーブルA・B）からXMLへの変換をコマンド１つで行えるようになる。また、複数のXMLファイルを一括生成できる。
 
