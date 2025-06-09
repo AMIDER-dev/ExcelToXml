@@ -1,5 +1,5 @@
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15621709.svg)](https://doi.org/10.5281/zenodo.15621697)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15621709.svg)](https://doi.org/10.5281/zenodo.15621709)
 
 Please follow the license and cite the DOI when you use this software.
 
