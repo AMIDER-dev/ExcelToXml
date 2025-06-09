@@ -1,5 +1,5 @@
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15621709.svg)](https://doi.org/10.5281/zenodo.15621709)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15621709.svg)](https://doi.org/10.5281/zenodo.15621709){:target="_blank"}
 
 Please follow the license and cite the DOI when you use this software.
 
@@ -235,9 +235,9 @@ dotnet run --project ./ExcelToXml/ExcelToXml.Console -- -a ./ISO/DataTable_A.xls
 
 ## License
 
-This software is released under the [MIT License](LICENSE).
-It uses [ClosedXML](https://github.com/ClosedXML/ClosedXML), which is also licensed under the MIT License.
+This software is released under the [MIT License](LICENSE){:target="_blank"}.
+It uses [ClosedXML](https://github.com/ClosedXML/ClosedXML){:target="_blank"}, which is also licensed under the MIT License.
 
 ## AMIDERプロジェクト
-- [分野横断型研究データベースAMIDER](https://amider.rois.ac.jp/)
-- 論文[AMIDER: A Multidisciplinary Research Database and Its Application to Promote Open Science](https://doi.org/10.5334/dsj-2025-007)
+- [分野横断型研究データベースAMIDER](https://amider.rois.ac.jp/){:target="_blank"}
+- 論文[AMIDER: A Multidisciplinary Research Database and Its Application to Promote Open Science](https://doi.org/10.5334/dsj-2025-007){:target="_blank"}
