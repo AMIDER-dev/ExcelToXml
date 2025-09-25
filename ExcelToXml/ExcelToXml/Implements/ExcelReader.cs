@@ -37,7 +37,7 @@ internal abstract class AbstractDataTableRader(ILogger logger)
         for (int rowIndex = StartRowIndex; rowIndex <= worksheet.LastRowUsed()!.RowNumber(); rowIndex++)
         {
             var elemNames = new List<string>();
-            var group = new List<int>();
+            var group = new List<string>();
 
             for (int colIndex = 1; colIndex <= elemEndIndex; colIndex++)
             {
@@ -58,13 +58,13 @@ internal abstract class AbstractDataTableRader(ILogger logger)
                     }
 
                     elemNames.Add(range.FirstCell().GetValue<string>());
-                    group.Add(range.FirstRow().RowNumber());
+                    group.Add($"{colIndex}_{range.FirstRow().RowNumber()}");
                 }
                 else
                 {
                     // セルの値を取得して加工
                     elemNames.Add(cell.GetValue<string>());
-                    group.Add(rowIndex);
+                    group.Add($"{colIndex}_{rowIndex}");
                 }
             }
 

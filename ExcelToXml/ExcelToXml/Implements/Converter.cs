@@ -1,6 +1,7 @@
 ﻿using Nipr.ExcelToXml.Contract;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Xml;
@@ -138,34 +139,24 @@ internal class MakeXml(ISampleXmlStream sampleXml, ILogger logger) : IConverter
     {
         if (values.Any())
         {
-            var first = values.First();
-            var splitid = first.id.Split('/');
-            if (splitid.Length == index+1)
+            var rootId = string.Join('/',values.First().id.Split('/')[0..(index+1)]);
+
+            foreach (var (_, rootxpath) in pathes.Where(i => i.id == rootId))
             {
-                foreach (var (id, value, _) in values)
+                var newroot = WriteElement(root, $"{(index!=0?".":"")}{rootxpath}", null, nms, true)!;
+
+                foreach (var (id, value, _) in values.Where(i => i.group.Length == index + 2))
                 {
                     foreach (var (_, xpath) in pathes.Where(i => i.id == id))
                     {
-                        var newroot = WriteElement(root, $"./{xpath}", value, nms, true);
+                        var _ = WriteElement(newroot, $".{xpath}", value, nms, true);
                     }
                 }
-            }
-            else
-            {
-                var searchId = string.Join('/', splitid[0..(index+1)]);
-                logger.Info($"親要素 {searchId} の作成");
-                foreach (var (_, xpath) in pathes.Where(i => i.id == searchId))
+
+                var nestedValues = values.Select(i => (i.id, i.value, i.group)).Where(i=>i.group.Length>index+2).GroupBy(i => i.group[index+1]).ToList();
+                foreach (var setitem in nestedValues)
                 {
-                    var modifyPath = $"./{(index == 0 ? "/" +string.Join('/', xpath.Split('/')[2..]) : xpath)}";
-
-                    // 最上位要素の場合、XPathの指定を補正する。
-                    var newroot = WriteElement(root, modifyPath, null, nms, true);
-
-                    if (newroot != null)
-                    {
-                        foreach (var next in values.GroupBy(i => i.group[index]))
-                            ApplyNestedElement(newroot, pathes, next, nms, index + 1);
-                    }
+                    ApplyNestedElement(newroot, pathes, setitem, nms, index+1);
                 }
             }
         }
